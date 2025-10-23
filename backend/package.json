@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "private": true,
-  "scripts": {
+ "scripts": {
+  "build": "tsc"
+}
     "watch": "tsc-watch --build --onSuccess \"node start-dev.js\"",
     "watch-yaml-parse-test": "tsc-watch --build --onSuccess \"node dist/yamlParseTest.js\"",
     "build": "tsc --build",
