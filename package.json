@@ -4,10 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
+    "build": "cd backend && npm run build",
     "format": "prettier --write \"./backend/src/**/*.{css,html,js,json,ts,tsx}\" \"./dashboard/src/**/*.{css,html,js,json,ts,tsx}\"",
     "lint": "eslint \"./backend/src/**/*.{js,ts,tsx}\" \"./dashboard/src/**/*.{js,ts,tsx}\"",
     "codestyle-check": "prettier --check \"./backend/src/**/*.{css,html,js,json,ts,tsx}\" \"./dashboard/src/**/*.{css,html,js,json,ts,tsx}\"",
-
     "start-bot": "cd backend && npm run start-bot-prod",
     "start-api": "cd backend && npm run start-api-prod",
     "start-dashboard": "cd dashboard && node serve.js",
