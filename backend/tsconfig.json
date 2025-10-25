@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "commonjs",
-    "target": "es2018",
-    "strict": false,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "noLib": false,
-    "types": [],
-    "sourceMap": true
+    "target": "ES2020",                // Modern JS target for better features
+    "module": "commonjs",              // For Node.js compatibility
+    "outDir": "./dist",                // Output compiled JS here
+    "rootDir": "./src",                // Source files location
+    "strict": true,                    // Enable strict type checking for your code
+    "esModuleInterop": true,           // Better import handling
+    "skipLibCheck": true,              // Skip type checking of node_modules/*.d.ts files (key fix!)
+    "forceConsistentCasingInFileNames": true  // Avoid case issues
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*"]
+  "include": ["src/**/*"],             // Compile these files
+  "exclude": ["node_modules"]          // Ignore deps
 }
