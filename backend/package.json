@@ -1,14 +1,12 @@
-{
+  {
   "name": "@zeppelinbot/backend",
   "version": "0.0.1",
   "description": "",
   "private": true,
- "scripts": {
-  "build": "tsc"
-}
+  "scripts": {
+    "build": "tsc",
     "watch": "tsc-watch --build --onSuccess \"node start-dev.js\"",
     "watch-yaml-parse-test": "tsc-watch --build --onSuccess \"node dist/yamlParseTest.js\"",
-    "build": "tsc --build",
     "start-bot-dev": "node --enable-source-maps --stack-trace-limit=30 --inspect=0.0.0.0:9229 dist/index.js",
     "start-bot-dev-debug": "DEBUG=true clinic heapprofiler --collect-only --dest .clinic-bot -- node --enable-source-maps --stack-trace-limit=30 --inspect=0.0.0.0:9229 dist/index.js",
     "start-bot-prod": "node --enable-source-maps --stack-trace-limit=30 dist/index.js",
@@ -44,7 +42,6 @@
     "dotenv": "^4.0.0",
     "emoji-regex": "^8.0.0",
     "escape-string-regexp": "^1.0.5",
-    "express": "^4.17.0",
     "fp-ts": "^2.0.1",
     "humanize-duration": "^3.15.0",
     "js-yaml": "^3.13.1",
@@ -101,6 +98,7 @@
     "ava": "^5.3.1",
     "rimraf": "^2.6.2",
     "source-map-support": "^0.5.16",
+    "typescript": "^4.0.0",
     "zod-to-json-schema": "^3.22.3"
   },
   "ava": {
