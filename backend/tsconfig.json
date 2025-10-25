@@ -1,16 +1,12 @@
 {
-  "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "baseUrl": "./src",
-    "rootDir": "./src",
-    "outDir": "./dist"
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es2018",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true
   },
-  "include": ["src/**/*.ts", "src/**/*.json"],
-  "references": [
-    {
-      "path": "../shared/tsconfig.json"
-    }
-  ]
+  "include": ["src/**/*"]
 }
