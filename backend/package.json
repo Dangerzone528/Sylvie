@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit && tsc",
     "watch": "tsc-watch --build --onSuccess \"node start-dev.js\"",
     "watch-yaml-parse-test": "tsc-watch --build --onSuccess \"node dist/yamlParseTest.js\"",
     "start-bot-dev": "node --enable-source-maps --stack-trace-limit=30 --inspect=0.0.0.0:9229 dist/index.js",
